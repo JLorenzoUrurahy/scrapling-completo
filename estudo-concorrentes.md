@@ -4,7 +4,7 @@ Data da coleta: 16/11/2026. Objetivo: aprender com estrutura, funções e preço
 
 ## Como ler este estudo
 
-Dois dos quatro sites foram coletados diretamente e dois foram pulados, porque os termos de uso deles vedam coleta automatizada. Para os pulados, o que aparece vem só da página de termos (que li para decidir) e de fontes públicas de terceiros, e está marcado como tal.
+Dois dos seis sites foram coletados diretamente e quatro foram pulados, porque os termos de uso deles vedam coleta automatizada. Para os pulados, o que aparece vem só da página de termos (que li para decidir) e de fontes públicas de terceiros, e está marcado como tal.
 
 | Concorrente | Site | robots.txt | Termos de uso | Coleta direta |
 |---|---|---|---|---|
@@ -12,6 +12,8 @@ Dois dos quatro sites foram coletados diretamente e dois foram pulados, porque o
 | Nora | noraai.co | Libera tudo, menos API e uma página de pós-compra | Não há termos de uso publicados, só política de privacidade, sem cláusula sobre coleta | **Feita** |
 | Meu Assistente | meuassistente.io | Libera tudo | Vedam "robôs, scripts ou meios automatizados" para extrair dados do Serviço; a definição de Serviço é ambígua e pode incluir o site | **Pulada** |
 | Meu Assessor | meuassessor.com | Libera tudo, inclusive rastreadores de IA | Vedam crawlers e scrapers na Plataforma, que inclui o site institucional, e vedam avaliação comparativa para produto concorrente sem autorização escrita | **Pulada** |
+| Lindy | lindy.ai | Libera quase tudo, menos arquivo e páginas paginadas | Vedam spiders, robôs e scrapers, salvo buscadores e navegador comum, e vedam usar o serviço em esforço de concorrência | **Pulada** |
+| Martin | trymartin.com | Libera tudo | Mesmo modelo de termos da Lindy, com as mesmas duas vedações | **Pulada** |
 
 Observações sobre o método:
 
@@ -19,6 +21,8 @@ Observações sobre o método:
 - Craft Anything 0.6.1 em Clean room, só com abrir página, captura de tela e fechar. Nenhum `rebuild` e nenhuma captura para reconstrução.
 - Nenhuma conta criada, nenhum login, nenhum formulário enviado. Nenhum texto, logo, imagem ou código copiado: tudo abaixo é resumo com palavras próprias.
 - O HTTPS de meuassistente.io apresenta um certificado de outro domínio. Só o robots.txt e a página de termos foram lidos, por HTTP simples, sem desligar a verificação de certificado.
+- Para achar o link dos termos do Martin, a página inicial dele foi baixada uma vez. Usei só a lista de links e descartei o texto.
+- Lindy e Martin são produtos americanos, em inglês, com preço só em dólar. Não converti para reais, porque o câmbio e os impostos de cartão internacional variam.
 - Preços mudam. Os valores valem para a data da coleta.
 
 ---
@@ -181,10 +185,103 @@ Garantia de 7 dias com devolução integral. As fontes divergem sobre a existên
 
 ---
 
+## 5. Lindy (lindy.ai) — coleta direta pulada
+
+Fontes: a página de termos do próprio site, o trecho da página de preços exibido por buscadores e análises de terceiros, várias delas com cara de conteúdo de afiliado e com números que não batem entre si.
+
+**Promessa em uma frase:** um assistente de trabalho com IA que cuida da caixa de entrada, das reuniões, da agenda e dos retornos pendentes.
+
+**Funções** (por terceiros)
+
+- Triagem e gestão automática da caixa de entrada, com rascunhos de resposta.
+- Reuniões: preparação, anotações e acompanhamento depois.
+- Agenda e cobrança de retornos.
+- Delegação por mensagem, pelo iMessage e pelo Slack.
+- Uso de computador, em que o assistente opera sites por conta do usuário.
+- Criação de agentes próprios em linguagem natural, com muitas integrações.
+- Pede aprovação antes de agir.
+- Extensão para Chrome e oferta para empresas.
+
+**Primeiro uso, passo a passo** (parcial)
+
+1. Iniciar o teste de 7 dias. Não há mais plano gratuito permanente, segundo as análises.
+2. Conectar e-mail e agenda.
+3. Delegar por mensagem ou instalar no Slack, o que uma análise descreve como um clique.
+4. O restante da jornada não foi coletado.
+
+**Canais:** web, iMessage, Slack, e-mail e extensão de navegador. Os termos citam aplicativo móvel. Não encontrei menção a WhatsApp.
+
+**Planos e preços** (em dólar, a conferir no site)
+
+| Plano | Preço | Observação |
+|---|---|---|
+| Plus | US$ 49,99/mês | É o valor que aparece na página oficial via buscador. Uma análise cita US$ 29,99 |
+| Pro | US$ 99,99/mês | Citado por uma única análise |
+| Max | US$ 199,99/mês | Citado por uma única análise |
+| Enterprise | Sob consulta | |
+
+No início de 2026 a empresa teria trocado o modelo de créditos por assinatura fixa. As fontes ainda divergem sobre créditos embutidos nos planos.
+
+**Elogios e reclamações**
+
+- Elogios: configuração sem código e interface fácil são o ponto mais citado no G2, onde a nota fica entre 4,7 e 4,9.
+- Reclamações: no Trustpilot, cobrança depois do cancelamento, cobrança não autorizada e dificuldade de reembolso. Também lentidão, consumo de créditos mesmo quando o resultado sai errado e dificuldade com fluxos mais complexos.
+
+---
+
+## 6. Martin (trymartin.com) — coleta direta pulada
+
+Fontes: a página de termos, o robots.txt e análises e diretórios de terceiros. As notas variam muito entre as fontes.
+
+**Promessa em uma frase:** um assistente pessoal de IA no estilo Jarvis, com quem se fala por mensagem ou ligação.
+
+**Funções** (por terceiros)
+
+- Agenda, caixa de entrada, lembretes e lista de tarefas.
+- Faz ligações e envia mensagens em nome do usuário, e confirma os detalhes antes de enviar.
+- Ligações de despertar e tarefas em segundo plano.
+- Conversa por voz, inclusive por telefonema.
+- Alternância entre perfil pessoal e de trabalho nos planos.
+
+**Primeiro uso, passo a passo** (parcial)
+
+1. Cadastro no painel web, com verificação por e-mail ou telefone.
+2. Teste grátis de 7 dias, com cancelamento a qualquer momento.
+3. Conectar agenda e caixa de entrada.
+4. Falar com o assistente pelo canal preferido.
+
+**Canais:** SMS, ligação telefônica, e-mail, Slack, aplicativo para iPhone e painel web. Algumas fontes citam WhatsApp. Não há aplicativo Android listado.
+
+**Planos e preços** (em dólar, a conferir no site)
+
+| Plano | Anual | Mensal |
+|---|---|---|
+| Basic | cerca de US$ 21/mês | US$ 35/mês |
+| Pro | cerca de US$ 30/mês | até US$ 49/mês |
+
+Os valores vêm de capturas de terceiros feitas entre maio e outubro de 2026 e não coincidem totalmente.
+
+**Elogios e reclamações**
+
+- Elogios: bom suporte e notas em torno de 4,4 a 4,6 em diretórios e no Product Hunt, este com poucas avaliações.
+- Reclamações: atraso em comandos complexos e ao rascunhar e-mails, recursos ainda em evolução, falta de webhooks e de API pública, ausência de Android.
+
+---
+
 ## Comparativo rápido
 
-| | Meu Gestor | Nora | Meu Assistente | Meu Assessor |
+| | Canal principal | Entrada | Preço mensal | Foco |
 |---|---|---|---|---|
+| Meu Gestor | WhatsApp | Teste de 2 dias | R$ 29,99 | Registro e organização |
+| Nora | WhatsApp e app iPhone | Convite | Não publicado | Execução de tarefas |
+| Meu Assistente | App e web | Plano gratuito | R$ 19,90 | Vários assistentes simples |
+| Meu Assessor | WhatsApp e painel web | Garantia de 7 dias | R$ 59,90, ou cerca de R$ 29,90 no anual | Equipe de personas, finanças |
+| Lindy | Web, iMessage e Slack | Teste de 7 dias | A partir de US$ 49,99 | Trabalho: e-mail e reuniões |
+| Martin | SMS, ligação e app iPhone | Teste de 7 dias | US$ 35, ou cerca de US$ 21 no anual | Assistente pessoal por voz e texto |
+
+Só Meu Gestor e Nora foram conferidos nos sites oficiais.
+
+---|---|---|---|---|
 | Canal principal | WhatsApp | WhatsApp e app iPhone | App e web | WhatsApp e painel web |
 | Entrada | Teste de 2 dias | Convite | Plano gratuito | Garantia de 7 dias |
 | Preço mensal | R$ 29,99 | Não publicado | R$ 19,90 | R$ 59,90, ou cerca de R$ 29,90 no anual |
@@ -205,18 +302,21 @@ Garantia de 7 dias com devolução integral. As fontes divergem sobre a existên
 8. **Controle dos dados à vista:** baixar, corrigir e apagar pela área do cliente e pela conversa, e dizer com quais provedores de IA os dados são compartilhados.
 9. **Preço simples e cancelamento fácil**, inclusive pela conversa. Um plano gratuito ou teste curto sem cartão reduz a barreira.
 10. **Pix com débito mensal autorizado** como forma de pagamento, além do cartão.
+11. **Voz como canal.** O Martin atende por ligação e faz ligações de despertar. Para lembrete crítico, uma chamada é mais difícil de ignorar que uma mensagem.
+12. **Começar por uma dor só.** A Lindy entra pela caixa de entrada e pelas reuniões, e só depois amplia. É mais fácil de explicar do que "faz tudo".
 
 ## O que nenhum deles faz (pelo que foi possível observar)
 
-1. **Segundo cérebro de verdade.** Todos guardam itens soltos (gasto, tarefa, nota). Nenhum liga uma nota a outra, a pessoas, a projetos ou a decisões, nem responde perguntas cruzando tudo o que o usuário já guardou.
+1. **Segundo cérebro de verdade.** Os brasileiros guardam itens soltos (gasto, tarefa, nota) e os americanos focam em executar tarefas de e-mail e agenda. Nenhum liga uma nota a outra, a pessoas, a projetos ou a decisões, nem responde perguntas cruzando tudo o que o usuário já guardou.
 2. **Busca com fonte.** Nenhum mostra de onde tirou a resposta, com a nota ou a mensagem original ao lado.
 3. **Revisão periódica do conhecimento.** Há resumo do dia, mas não revisão semanal de ideias, pendências antigas ou notas esquecidas.
 4. **Portabilidade aberta.** O Meu Gestor oferece cópia dos dados, mas nenhum anuncia exportação em formato aberto, como Markdown, nem sincronização com ferramentas de notas.
 5. **Mesma memória em todos os canais.** Cada um privilegia um canal. Nenhum promete WhatsApp, web e app com a mesma memória e o mesmo histórico.
 6. **Memória visível e editável.** Nenhum mostra uma tela com o que o assistente sabe sobre o usuário, para corrigir ou apagar item por item.
-7. **Preço público para quem quer execução de tarefas.** A única que executa ações, a Nora, não tem preço nem acesso aberto.
+7. **Execução de tarefas em português, com preço em reais e acesso aberto.** A Nora executa ações, mas não tem preço nem acesso aberto. Lindy e Martin executam, mas são em inglês, cobram em dólar e não têm o WhatsApp como canal central.
+8. **Finanças pessoais junto com execução de tarefas.** Os brasileiros registram gastos, os americanos não tratam de finanças pessoais.
 
-Ressalva: dois sites não foram coletados, então alguma dessas lacunas pode estar coberta por Meu Assistente ou Meu Assessor em páginas que não li.
+Ressalva: quatro sites não foram coletados, então alguma dessas lacunas pode estar coberta em páginas que não li.
 
 ## O que evitar
 
@@ -229,7 +329,9 @@ Ressalva: dois sites não foram coletados, então alguma dessas lacunas pode est
 7. **Pedir permissões demais de uma vez.** O modelo da Nora depende de acesso amplo a mensagens, e-mail e saúde. Sem confiança construída, isso afasta, e aumenta muito a responsabilidade com dados sensíveis.
 8. **Fila de convite longa sem preço.** Cria expectativa, mas impede o usuário de decidir.
 9. **Nome genérico.** Há vários produtos chamados "Meu Assistente", "Meu Assessor" e "Nora" em domínios diferentes, o que confunde busca, avaliações e até o Reclame Aqui.
-10. **Depender de um só canal de terceiros.** Há relatos públicos de números de WhatsApp bloqueados ligados a um dos concorrentes, sem causa confirmada. Ter web ou app como alternativa reduz o risco.
+10. **Cobrança por créditos e cobrança depois do cancelamento.** São as queixas mais fortes contra a Lindy. Crédito gasto em resultado errado irrita mais que preço alto.
+11. **Lançar só para iPhone.** Martin e Nora não têm Android, que é a maioria dos celulares no Brasil.
+12. **Depender de um só canal de terceiros.** Há relatos públicos de números de WhatsApp bloqueados ligados a um dos concorrentes, sem causa confirmada. Ter web ou app como alternativa reduz o risco.
 
 ---
 
@@ -237,7 +339,7 @@ Ressalva: dois sites não foram coletados, então alguma dessas lacunas pode est
 
 Sites coletados diretamente: meugestoria.com (início, funcionalidades, como funciona, preço, perguntas frequentes, segurança, termos de uso) e noraai.co (início, planos, privacidade).
 
-Páginas lidas só para decidir sobre a coleta: termos de uso de meuassistente.io e de meuassessor.com, e o robots.txt dos quatro sites.
+Páginas lidas só para decidir sobre a coleta: termos de uso de meuassistente.io, meuassessor.com, lindy.ai e trymartin.com, e o robots.txt dos seis sites.
 
 Fontes de terceiros:
 
@@ -247,4 +349,12 @@ Fontes de terceiros:
 - [Reclame Aqui — Meu Assessor, lista de reclamações](https://www.reclameaqui.com.br/empresa/meu-assessor/lista-reclamacoes/)
 - [Reclame Aqui — segundo perfil, não verificado](https://www.reclameaqui.com.br/empresa/meu-assessor-i-plataforma-via-whatssap/)
 - [ZapGastos — comparação com o Meu Assessor (fonte concorrente)](https://zapgastos.com/compare/meu-assessor/)
-- Trechos de meuassistente.io e meuassessor.com exibidos por buscadores, usados para preço e funções desses dois.
+- Trechos de meuassistente.io, meuassessor.com e lindy.ai exibidos por buscadores, usados para preço e funções.
+- [CloudTalk — análise da Lindy](https://www.cloudtalk.io/blog/lindy-ai-review/)
+- [CloudTalk — preços da Lindy](https://www.cloudtalk.io/blog/lindy-ai-pricing/)
+- [Saner.ai — avaliações da Lindy](https://www.saner.ai/blogs/lindy-ai-reviews)
+- [Makerstack — análise da Lindy](https://makerstack.co/reviews/lindy-ai-review/)
+- [eesel.ai — análise do Martin](https://www.eesel.ai/blog/martin-ai-review)
+- [Product Hunt — avaliações do Martin](https://www.producthunt.com/products/martin/reviews)
+- [Tool Directory — Martin](https://tooldirectory.ai/tools/martin)
+- [xpay — preços do Martin](https://www.xpay.sh/saas-pricing/try-martin/)
