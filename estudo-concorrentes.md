@@ -4,12 +4,13 @@ Data da coleta: 16/11/2026. Objetivo: aprender com estrutura, funções e preço
 
 ## Como ler este estudo
 
-Dois dos seis sites foram coletados diretamente e quatro foram pulados, porque os termos de uso deles vedam coleta automatizada. Para os pulados, o que aparece vem só da página de termos (que li para decidir) e de fontes públicas de terceiros, e está marcado como tal.
+Três dos sete sites foram coletados diretamente e quatro foram pulados, porque os termos de uso deles vedam coleta automatizada. Para os pulados, o que aparece vem só da página de termos (que li para decidir) e de fontes públicas de terceiros, e está marcado como tal.
 
 | Concorrente | Site | robots.txt | Termos de uso | Coleta direta |
 |---|---|---|---|---|
 | Meu Gestor | meugestoria.com | Libera tudo, menos conta, admin, API e webhooks | Proíbem robôs no uso do assistente e da conta, não a leitura das páginas públicas | **Feita** |
 | Nora | noraai.co | Libera tudo, menos API e uma página de pós-compra | Não há termos de uso publicados, só política de privacidade, sem cláusula sobre coleta | **Feita** |
+| Spilo | spilo.ai | Libera as páginas públicas e bloqueia as áreas logadas e a API | Proíbem copiar, modificar e fazer engenharia reversa do serviço e burlar limites; nada sobre leitura automatizada das páginas públicas | **Feita** |
 | Meu Assistente | meuassistente.io | Libera tudo | Vedam "robôs, scripts ou meios automatizados" para extrair dados do Serviço; a definição de Serviço é ambígua e pode incluir o site | **Pulada** |
 | Meu Assessor | meuassessor.com | Libera tudo, inclusive rastreadores de IA | Vedam crawlers e scrapers na Plataforma, que inclui o site institucional, e vedam avaliação comparativa para produto concorrente sem autorização escrita | **Pulada** |
 | Lindy | lindy.ai | Libera quase tudo, menos arquivo e páginas paginadas | Vedam spiders, robôs e scrapers, salvo buscadores e navegador comum, e vedam usar o serviço em esforço de concorrência | **Pulada** |
@@ -21,6 +22,7 @@ Observações sobre o método:
 - Craft Anything 0.6.1 em Clean room, só com abrir página, captura de tela e fechar. Nenhum `rebuild` e nenhuma captura para reconstrução.
 - Nenhuma conta criada, nenhum login, nenhum formulário enviado. Nenhum texto, logo, imagem ou código copiado: tudo abaixo é resumo com palavras próprias.
 - O HTTPS de meuassistente.io apresenta um certificado de outro domínio. Só o robots.txt e a página de termos foram lidos, por HTTP simples, sem desligar a verificação de certificado.
+- O site do Spilo é montado por JavaScript, então o pedido HTTP simples do Scrapling voltou sem texto. Li as três páginas públicas (início, sobre e termos) num navegador comum, sem modo furtivo, além das capturas do Craft Anything.
 - Para achar o link dos termos do Martin, a página inicial dele foi baixada uma vez. Usei só a lista de links e descartei o texto.
 - Lindy e Martin são produtos americanos, em inglês, com preço só em dólar. Não converti para reais, porque o câmbio e os impostos de cartão internacional variam.
 - Preços mudam. Os valores valem para a data da coleta.
@@ -268,18 +270,60 @@ Os valores vêm de capturas de terceiros feitas entre maio e outubro de 2026 e n
 
 ---
 
+## 7. Spilo (spilo.ai)
+
+É o concorrente mais próximo da ideia de segundo cérebro. É da mesma empresa espanhola que faz a Luzia e foi lançado no Brasil em junho de 2026, ainda em versão beta segundo a imprensa.
+
+**Promessa em uma frase:** guardar qualquer coisa pelo WhatsApp ou pela web e achar depois, quando importar.
+
+**Funções**
+
+- Captura de links, fotos, áudios, PDFs, documentos e anotações, por mensagem no WhatsApp, colando na web ou enviando arquivo.
+- Cada item vira um cartão com título, resumo, detalhes e categoria, que o usuário pode editar. A fonte original fica anexada ao cartão.
+- Categorização e etiquetas automáticas. A imprensa fala em até 10 categorias.
+- Busca por palavra-chave e busca por significado.
+- Perguntas em linguagem natural sobre o que foi guardado.
+- Lembretes sobre itens salvos, entregues pelo WhatsApp.
+- Compartilhamento de itens e de listas por link público, e listas compartilhadas.
+- Privado por padrão, com exportação e exclusão de conta e dados.
+- Declara, segundo a imprensa, não usar o conteúdo salvo para treinar modelos.
+- Site em português, espanhol e inglês.
+
+**Primeiro uso, passo a passo**
+
+1. Não há formulário de cadastro. O usuário clica para começar no WhatsApp ou abre o app web.
+2. A conta é criada ao mandar a primeira mensagem ou ao verificar o número. O login usa o número do WhatsApp e um código de 6 dígitos recebido por lá.
+3. Envia o primeiro link, foto, documento ou ideia.
+4. O Spilo devolve o cartão organizado.
+5. Depois, busca ou pergunta em linguagem natural, no WhatsApp ou na web, sobre a mesma biblioteca.
+
+**Canais:** WhatsApp e app web, com a mesma biblioteca nos dois. A imprensa cita também aplicativos para Android e iPhone, que não vi no site.
+
+**Planos e preços:** gratuito. Os termos reservam o direito de criar recursos pagos ou assinatura no futuro, com aviso prévio.
+
+**Elogios e reclamações:** não encontrei avaliações públicas de usuários. A cobertura é de imprensa de lançamento.
+
+**Sinais a notar**
+
+- As páginas do site se contradizem no tom: uma fala em biblioteca pesquisável, outra em interface visual no estilo de mural de imagens.
+- Os termos dizem que, em caso de divergência, vale a versão em espanhol.
+- O número de WhatsApp é operado por outra empresa do mesmo grupo.
+
+---
+
 ## Comparativo rápido
 
 | | Canal principal | Entrada | Preço mensal | Foco |
 |---|---|---|---|---|
 | Meu Gestor | WhatsApp | Teste de 2 dias | R$ 29,99 | Registro e organização |
 | Nora | WhatsApp e app iPhone | Convite | Não publicado | Execução de tarefas |
+| Spilo | WhatsApp e web | Direto, sem cadastro | Gratuito | Guardar e achar depois |
 | Meu Assistente | App e web | Plano gratuito | R$ 19,90 | Vários assistentes simples |
 | Meu Assessor | WhatsApp e painel web | Garantia de 7 dias | R$ 59,90, ou cerca de R$ 29,90 no anual | Equipe de personas, finanças |
 | Lindy | Web, iMessage e Slack | Teste de 7 dias | A partir de US$ 49,99 | Trabalho: e-mail e reuniões |
 | Martin | SMS, ligação e app iPhone | Teste de 7 dias | US$ 35, ou cerca de US$ 21 no anual | Assistente pessoal por voz e texto |
 
-Só Meu Gestor e Nora foram conferidos nos sites oficiais.
+Só Meu Gestor, Nora e Spilo foram conferidos nos sites oficiais.
 
 ---|---|---|---|---|
 | Canal principal | WhatsApp | WhatsApp e app iPhone | App e web | WhatsApp e painel web |
@@ -303,18 +347,22 @@ Só Meu Gestor e Nora foram conferidos nos sites oficiais.
 9. **Preço simples e cancelamento fácil**, inclusive pela conversa. Um plano gratuito ou teste curto sem cartão reduz a barreira.
 10. **Pix com débito mensal autorizado** como forma de pagamento, além do cartão.
 11. **Voz como canal.** O Martin atende por ligação e faz ligações de despertar. Para lembrete crítico, uma chamada é mais difícil de ignorar que uma mensagem.
-12. **Começar por uma dor só.** A Lindy entra pela caixa de entrada e pelas reuniões, e só depois amplia. É mais fácil de explicar do que "faz tudo".
+12. **Entrada sem cadastro.** No Spilo a primeira mensagem já cria a conta, e o código de 6 dígitos chega pelo próprio WhatsApp. É o primeiro uso mais curto de todos.
+13. **Cartão com a fonte anexada.** O Spilo transforma cada captura em cartão editável e mantém o original junto. Isso dá confiança na resposta.
+14. **Guardar primeiro, organizar depois.** A captura não exige que o usuário escolha pasta ou categoria.
+15. **Começar por uma dor só.** A Lindy entra pela caixa de entrada e pelas reuniões, e só depois amplia. É mais fácil de explicar do que "faz tudo".
 
 ## O que nenhum deles faz (pelo que foi possível observar)
 
-1. **Segundo cérebro de verdade.** Os brasileiros guardam itens soltos (gasto, tarefa, nota) e os americanos focam em executar tarefas de e-mail e agenda. Nenhum liga uma nota a outra, a pessoas, a projetos ou a decisões, nem responde perguntas cruzando tudo o que o usuário já guardou.
-2. **Busca com fonte.** Nenhum mostra de onde tirou a resposta, com a nota ou a mensagem original ao lado.
-3. **Revisão periódica do conhecimento.** Há resumo do dia, mas não revisão semanal de ideias, pendências antigas ou notas esquecidas.
-4. **Portabilidade aberta.** O Meu Gestor oferece cópia dos dados, mas nenhum anuncia exportação em formato aberto, como Markdown, nem sincronização com ferramentas de notas.
-5. **Mesma memória em todos os canais.** Cada um privilegia um canal. Nenhum promete WhatsApp, web e app com a mesma memória e o mesmo histórico.
-6. **Memória visível e editável.** Nenhum mostra uma tela com o que o assistente sabe sobre o usuário, para corrigir ou apagar item por item.
-7. **Execução de tarefas em português, com preço em reais e acesso aberto.** A Nora executa ações, mas não tem preço nem acesso aberto. Lindy e Martin executam, mas são em inglês, cobram em dólar e não têm o WhatsApp como canal central.
-8. **Finanças pessoais junto com execução de tarefas.** Os brasileiros registram gastos, os americanos não tratam de finanças pessoais.
+O Spilo já cobre a base de um segundo cérebro: captura, cartão com fonte, busca por significado e perguntas sobre o que foi guardado. Então o espaço livre não está em "guardar e achar", e sim no que vem depois.
+
+1. **Memória e ação no mesmo produto.** O Spilo guarda e acha, mas não registra gastos, não cuida da agenda e não executa tarefas. Os assistentes brasileiros registram, mas não têm biblioteca pesquisável. Nora, Lindy e Martin executam, mas não são um acervo pessoal. Ninguém junta as três coisas.
+2. **Ligações entre itens.** O Spilo organiza por categoria e etiqueta. Nenhum liga uma nota a outra, a pessoas, a projetos ou a decisões.
+3. **Revisão periódica do conhecimento.** Há resumo do dia e lembrete por item, mas não revisão semanal de ideias, pendências antigas ou notas esquecidas.
+4. **Portabilidade aberta.** Há exportação de dados em dois deles, mas nenhum anuncia formato aberto, como Markdown, nem sincronização com ferramentas de notas.
+5. **Memória visível e editável sobre o usuário.** Nenhum mostra uma tela com o que o assistente sabe sobre a pessoa, para corrigir ou apagar item por item.
+6. **Execução de tarefas em português, com preço em reais e acesso aberto.** A Nora executa ações, mas não tem preço nem acesso aberto. Lindy e Martin executam, mas são em inglês, cobram em dólar e não têm o WhatsApp como canal central.
+7. **Modelo de receita claro para um segundo cérebro.** O único que faz isso é gratuito e ainda não disse como vai cobrar.
 
 Ressalva: quatro sites não foram coletados, então alguma dessas lacunas pode estar coberta em páginas que não li.
 
@@ -331,20 +379,24 @@ Ressalva: quatro sites não foram coletados, então alguma dessas lacunas pode e
 9. **Nome genérico.** Há vários produtos chamados "Meu Assistente", "Meu Assessor" e "Nora" em domínios diferentes, o que confunde busca, avaliações e até o Reclame Aqui.
 10. **Cobrança por créditos e cobrança depois do cancelamento.** São as queixas mais fortes contra a Lindy. Crédito gasto em resultado errado irrita mais que preço alto.
 11. **Lançar só para iPhone.** Martin e Nora não têm Android, que é a maioria dos celulares no Brasil.
-12. **Depender de um só canal de terceiros.** Há relatos públicos de números de WhatsApp bloqueados ligados a um dos concorrentes, sem causa confirmada. Ter web ou app como alternativa reduz o risco.
+12. **Competir com o Spilo só em "guardar e achar".** Ele é gratuito, entra sem cadastro e tem por trás uma empresa com dezenas de milhões de usuários, segundo a imprensa. Essa parte precisa existir, mas não sustenta sozinha um produto pago.
+13. **Depender de um só canal de terceiros.** Há relatos públicos de números de WhatsApp bloqueados ligados a um dos concorrentes, sem causa confirmada. Ter web ou app como alternativa reduz o risco.
 
 ---
 
 ## Fontes
 
-Sites coletados diretamente: meugestoria.com (início, funcionalidades, como funciona, preço, perguntas frequentes, segurança, termos de uso) e noraai.co (início, planos, privacidade).
+Sites coletados diretamente: meugestoria.com (início, funcionalidades, como funciona, preço, perguntas frequentes, segurança, termos de uso), noraai.co (início, planos, privacidade) e spilo.ai (início, sobre, termos).
 
-Páginas lidas só para decidir sobre a coleta: termos de uso de meuassistente.io, meuassessor.com, lindy.ai e trymartin.com, e o robots.txt dos seis sites.
+Páginas lidas só para decidir sobre a coleta: termos de uso de meuassistente.io, meuassessor.com, lindy.ai e trymartin.com, e o robots.txt dos sete sites.
 
 Fontes de terceiros:
 
 - [ABC da Comunicação — lançamento da Nora](https://www.abcdacomunicacao.com.br/startup-brasileira-lanca-nora-assistente-pessoal-de-ia-que-resolve-tarefas-pelo-whatsapp/)
 - [Guaíra News — Nora no WhatsApp](https://www.guairanews.com/2026/11/06/nora-assistente-pessoal-whatsapp/)
+- [Tecnoblog — lançamento do Spilo](https://tecnoblog.net/noticias/criadores-da-luzia-lancam-assistente-de-organizacao-com-ia-no-whatsapp/)
+- [TecMundo — lançamento do Spilo](https://www.tecmundo.com.br/software/414188-luzia-lanca-spilo-assistente-de-ia-para-organizar-informacoes-no-whatsapp.htm)
+- [Mobile Time — Spilo no WhatsApp](https://www.mobiletime.com.br/noticias/30/06/2026/luzia-spilo-whatsapp/)
 - [Reclame Aqui — Meu Assessor](https://www.reclameaqui.com.br/empresa/meu-assessor/)
 - [Reclame Aqui — Meu Assessor, lista de reclamações](https://www.reclameaqui.com.br/empresa/meu-assessor/lista-reclamacoes/)
 - [Reclame Aqui — segundo perfil, não verificado](https://www.reclameaqui.com.br/empresa/meu-assessor-i-plataforma-via-whatssap/)
